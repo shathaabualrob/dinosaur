@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load dinotags %}
+
+{% block content %}
+
+<h1>Albertosaurus</h1>
+
+<p>
+  Albertosaurus ('Alberta lizard') is a smaller cousin of
+  the T-Rex. These dinosaurs were named after the location
+  of their first discovery, Alberta, Canada.
+
+</p>
+
+<p>
+  The nth letters of our dinosaur variable are:
+  <ul>
+    <li> 3rd: "{{dinosaurs|nth_letters:3}}"</li>
+    <li> 6th: "{{dinosaurs|nth_letters:6}}"</li>
+    <li> 10th: "{{dinosaurs|nth_letters:10}}"</li>
+  </ul>
+</p>
+
+{% endblock content %}
